@@ -1,0 +1,23 @@
+Shared Folders
+========================
+
+Luego de agregar la carpeta compartida por virtualbox se debe hacer lo siguiente:
+
+1.- Agregar el usuario al grupo vboxsf
+
+.. code-block:: console
+
+    $ sudo usermod -a -G vboxsf username
+ 
+Donde:
+    * username: Nombre del usuario que se tiene que agregar al grupo vboxsf
+
+2.- Permisos a la carpeta compartida:
+
+.. code-block:: console
+
+    $ sudo chown -R username:users path
+
+Donde: 
+    * username: Nombre del usuario
+    * path: ruta de la ruta compartida en la máquina virtualizada
