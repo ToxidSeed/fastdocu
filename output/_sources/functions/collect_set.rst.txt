@@ -1,0 +1,24 @@
+Pyspark.sql.functions.collect_set
+=====================================
+
+.. py:function:: F.collect_set(col)
+
+    Retorna un conjunto de objetos con elementos duplicados eliminados
+
+    Parámetros:
+        *col*: column
+
+    Ejemplos:
+
+        Dataframe base para los ejemplos:
+
+        .. code-block:: python
+
+            df = spark.read.csv("datasets/Salesstore.csv", quote='"', escape='"', sep=",", header=True)
+
+        Valores distintos por agrupación
+
+        .. code-block:: python
+
+            df.groupBy("Product_Container").agg(F.collect_set("Region")).show(truncate=False)
+        

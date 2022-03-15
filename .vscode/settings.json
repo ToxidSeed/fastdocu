@@ -1,0 +1,13 @@
+{
+    //python
+    "restructuredtext.confPath": "${workspaceFolder}/python",
+    "esbonio.sphinx.confDir": "/home/alone/projects/fastdocu/python",
+    "esbonio.server.enabled": true
+    
+    //spark
+    /*
+    "restructuredtext.confPath": "${workspaceFolder}/spark",
+    "esbonio.sphinx.confDir": "/home/alone/projects/fastdocu/spark",
+    "esbonio.server.enabled": true*/
+    
+}

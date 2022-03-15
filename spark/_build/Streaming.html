@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming &#8212; spark-fast 1 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="spark.readStream" href="streaming/readstream.html" />
+    <link rel="prev" title="Operators" href="Operators.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">spark-fast 1 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Concepts.html">
+   Concepts
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Constantes.html">
+   Constantes
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="Functions.html">
+   Functions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_agg.html">
+     dataframe.agg
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_filter.html">
+     dataframe.filter
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_groupby.html">
+     dataframe.groupBy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_sort.html">
+     dataframe.sort
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/df_summary.html">
+     dataframe.summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_na_drop.html">
+     dataframe.na.drop
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_fillna.html">
+     dataframe.fillna
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_orderby.html">
+     dataframe.orderBy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/dataframe_replace.html">
+     dataframe.replace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/df_pivot.html">
+     dataframe.pivot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/collect_list.html">
+     pyspark.sql.functions.collect_list
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/collect_set.html">
+     pyspark.sql.functions.collect_set
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions/row_number.html">
+     pyspark.sql.functions.row_number
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Frequent.html">
+   Frequent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Operators.html">
+   Operators
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Streaming
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="streaming/readstream.html">
+     spark.readStream
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="user_defined_functions.html">
+   User Defined Functions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Join.html">
+   Join
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="df_withcolumn.html">
+   Dataframe.withColumn
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Streaming.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternativas-a-structured-streaming">
+   Alternativas a Structured Streaming
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Streaming</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#alternativas-a-structured-streaming">
+   Alternativas a Structured Streaming
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="streaming">
+<h1>Streaming<a class="headerlink" href="#streaming" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Spark Streaming <strong>Dstream</strong> (primeras versiones de streaming), basado en <strong>RDD</strong> que era una temprana abstracción de Spark antes de Dataframes y Datasets.</p>
+<p>Era capaz de recibir datos de entrada de varios origenes, tales como <strong>Kafka</strong>, <strong>Flume</strong>, etc., y convertir la data entrante en micro-batches y procesarlos usando el engine Spark.</p>
+<p>En resumen Spark Streaming troceaba los datos entrantes en partes y luego estas partes eran procesadas por el engine Spark.</p>
+<p><strong>Desventajas</strong></p>
+<ol class="arabic simple">
+<li><p>Diferentes APIs para jobs de procesamiento batch y Stream.</p></li>
+<li><p>Incapaz de manejar procesamiento de datos batch basados en eventos.</p></li>
+<li><p>Limitada capacidad de tolerancia a fallos, sin una garantia end-to-end de procesamiento consistente de datos.</p></li>
+</ol>
+<p><strong>structured streaming</strong> (versiones mas recientes de streaming), ofrece la misma API tanto para procesamiento batch como streaming</p>
+<ul class="simple">
+<li><p>Esta basado sobre el engine Spark Sql y usa dataframe para múltiples operaciones.</p></li>
+<li><p>Proporciona una garantía end-to-end de consistencia de datos.</p></li>
+</ul>
+<p><strong>Elementos del Streaming</strong></p>
+<p><strong>Data Inputs</strong></p>
+<p>Desde:
+<em>Sistemas de Mensajería</em>: Apache Kafka, Flume, Logstash</p>
+<p><em>Carpetas de Archivos/Directorios</em>: Los archivos son leidos continuamente del directorio como un flujo de datos.</p>
+<p><strong>Data Processing</strong></p>
+<p><strong>Final Output</strong></p>
+<p>En el momento de escrbir esta docu, la última versión es la 3.2.1 y los tipos de salida estan descritos en la sección <em>Output Sinks</em> de la documentación de structured streaming <a class="reference external" href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">structured streaming</a>.</p>
+<div class="section" id="alternativas-a-structured-streaming">
+<h2>Alternativas a Structured Streaming<a class="headerlink" href="#alternativas-a-structured-streaming" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Flink</p></li>
+<li><p>Beam de Google</p></li>
+</ul>
+</div>
+</div>
+
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Operators.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Operators</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="streaming/readstream.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">spark.readStream</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By maqc<br/>
+    
+        &copy; Copyright 2021, maqc.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

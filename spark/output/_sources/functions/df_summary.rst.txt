@@ -1,0 +1,23 @@
+DataFrame.summary
+===============================
+
+Computa estadisticas específicas para columnas númericas y strings. las estadisticas disponibles son: count, mean, stddev, min, max, percentiles aproximados arbitrarios especificados como %
+
+.. py:function:: df.summary()
+
+Ejemplos:
+
+Dataframe base para los ejemplos:
+https://www.kaggle.com/anuvagoyal/sales-store-product-details
+
+.. code-block:: python
+
+    df = spark.read.csv("datasets/Salesstore.csv", quote='"', escape='"', sep=",", header=True)
+
+Ejecutando la función *summary()*
+
+.. code-block:: python
+
+    df = df.select(df["Sales"])
+    df.summary().show(truncate=False)
+    

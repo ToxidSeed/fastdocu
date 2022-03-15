@@ -1,0 +1,24 @@
+Pyspark.sql.functions.collect_list
+=====================================
+
+.. py:function:: F.collect_list(col)
+
+    Retorna una lista de objetos    
+
+    Parámetros:
+        *col*: column
+
+    Ejemplos:
+
+        Dataframe base para los ejemplos:
+        https://www.kaggle.com/anuvagoyal/sales-store-product-details
+
+        .. code-block:: python
+
+            df = spark.read.csv("datasets/Salesstore.csv", quote='"', escape='"', sep=",", header=True)
+
+        Valores distintos por agrupación sin duplicados
+
+        .. code-block:: python
+
+            df.groupBy("Product_Container").agg(F.collect_list("Region")).show(truncate=False)

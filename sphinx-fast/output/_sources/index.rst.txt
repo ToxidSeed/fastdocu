@@ -11,6 +11,7 @@ Welcome to sphinx-fast's documentation!
    :caption: Contents:
 
    quickstart
+   frequent
    lexers
 
 

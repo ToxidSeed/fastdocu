@@ -1,0 +1,31 @@
+DataFrame.sort
+===============================
+
+.. py:function:: df.sort(*cols, **kwargs)
+
+    Ordena un Dataframe, se puede usar también la función **df.orderBy**
+
+    Parámetros:
+        *cols*: str, list or column, optional
+
+        *ascending*: bool or list, optional
+
+            default: True
+
+    Ejemplos:
+
+        Ordenación simple:
+
+        .. code-block:: python
+
+            df.sort("JobTitle", ascending=True).show(truncate=False)
+
+        Ordenar por varios campos:
+
+        .. code-block:: python
+
+
+
+
+
+

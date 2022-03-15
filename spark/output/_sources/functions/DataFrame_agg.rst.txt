@@ -1,0 +1,20 @@
+DataFrame.agg
+=============================
+
+.. py:function:: df.agg(*exprs)
+
+    Agregación sobre el Dataframe completo sin grupos
+
+    Parámetros:
+        *exprs*: dict
+
+        Listado de pares columna:function de agregación
+
+    Ejemplo:
+        
+        .. code-block:: python
+            
+            df.agg({"age": "max"}).collect()
+
+
+
