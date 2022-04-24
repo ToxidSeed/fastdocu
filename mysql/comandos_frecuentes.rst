@@ -31,3 +31,8 @@ Comandos Frecuentes
 
         mysql> alter table <table_name> rename column <older_name> to <new_name>;
 
+**Backup de base de datos**
+
+    .. code-block:: shell
+
+        sudo mysqldump bagholdercuy -p > /home/alone/projects/bagholdercuy/data/bagholdercuy.sql
