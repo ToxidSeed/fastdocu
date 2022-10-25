@@ -1,4 +1,4 @@
-#!/home/alone/projects/fastdocu/venv/bin/python3
+#!/home/alone/projects/fastdocu/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

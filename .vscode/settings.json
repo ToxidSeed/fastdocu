@@ -2,7 +2,9 @@
     //python
     "restructuredtext.confPath": "${workspaceFolder}/python",
     "esbonio.sphinx.confDir": "${workspaceFolder}/python",
-    "esbonio.server.enabled": true
+    "esbonio.server.enabled": true,
+    "restructuredtext.preview.name": "sphinx",
+    "git.ignoreLimitWarning": true
     
     //spark
     /*

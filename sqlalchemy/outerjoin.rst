@@ -1,8 +1,11 @@
 outerjoin
 ===================
 
+**outerjoin** genera un left outer join
+
 .. code-block:: python
 
-    from sqlalchemy.orm import join
+    from sqlalchemy.orm import outerjoin
     session.query(obj).\
-    join(obj, refobj, obj.campo1 == refobj.campo2)
+    select_from(obj).\
+    outerjoin(refobj, obj.campo1 == refobj.campo2)

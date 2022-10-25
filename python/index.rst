@@ -11,6 +11,12 @@ Welcome to python-fast's documentation!
 
    conversions
    datetime
+   date
+   entorno
+   fechas
+   pyenv
+   string
+   venv
 
 
 Indices and tables

@@ -9,7 +9,14 @@ Welcome to python-fast's documentation!
 .. toctree::
    :maxdepth: 2
 
-   conversions.rst
+   conversions
+   datetime
+   date
+   entorno
+   fechas
+   pyenv
+   string
+   venv
 
 
 Indices and tables

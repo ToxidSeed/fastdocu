@@ -1,4 +1,4 @@
-DateTime
+datetime
 ==================
 
 .. py:function:: datetime.strptime(value, format)

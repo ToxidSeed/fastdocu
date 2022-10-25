@@ -4,7 +4,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Conversions &#8212; documentación de python-fast - 0</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -12,10 +12,12 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/translations.js"></script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="DateTime" href="datetime.html" />
     <link rel="prev" title="Welcome to python-fast’s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -34,8 +36,22 @@
           <div class="body" role="main">
             
   <section id="conversions">
-<h1>Conversions<a class="headerlink" href="#conversions" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>ddxxxa</p>
+<h1>Conversions<a class="headerlink" href="#conversions" title="Enlace permanente a este encabezado">¶</a></h1>
+<section id="datetime-a-date">
+<h2>datetime a date<a class="headerlink" href="#datetime-a-date" title="Enlace permanente a este encabezado">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">date</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="convertir-a-string">
+<h2>convertir a string<a class="headerlink" href="#convertir-a-string" title="Enlace permanente a este encabezado">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+<span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="n">newstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
@@ -56,7 +72,12 @@
 
 <h3>Navegación</h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Conversions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conversions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#datetime-a-date">datetime a date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#convertir-a-string">convertir a string</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="datetime.html">DateTime</a></li>
 </ul>
 
 <div class="relations">
@@ -64,6 +85,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="capítulo anterior">Welcome to python-fast’s documentation!</a></li>
+      <li>Next: <a href="datetime.html" title="próximo capítulo">DateTime</a></li>
   </ul></li>
 </ul>
 </div>
@@ -76,7 +98,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
 
 
 
@@ -93,7 +115,7 @@
       &copy;2022, maqc.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
