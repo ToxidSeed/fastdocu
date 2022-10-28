@@ -22,3 +22,9 @@ Virtual environments
 .. code-block:: shell
 
     $ python3.9 -m venv venv
+
+**Activar**
+
+.. code-block:: shell
+
+    $ 

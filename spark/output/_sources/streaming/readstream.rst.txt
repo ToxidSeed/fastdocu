@@ -1,6 +1,0 @@
-spark.readStream
-=======================
-
-.. code-block:: python
-
-    #imports

@@ -130,6 +130,7 @@ dmypy.json
 
 #outputs
 python/output
+mysql/_build/
 
 # code files
 .vscode/

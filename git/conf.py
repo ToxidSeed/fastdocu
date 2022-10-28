@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'mysql-fast'
-copyright = '2021, ma'
-author = 'ma'
+project = 'git-fast'
+copyright = '2022, maqc'
+author = 'maqc'
 
 
 # -- General configuration ---------------------------------------------------
