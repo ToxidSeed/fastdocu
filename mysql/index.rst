@@ -14,6 +14,8 @@ Welcome to mysql-fast's documentation!
    system_tables
    comandos_frecuentes
    fechas
+   base_datos
+   constraints
 
 
 

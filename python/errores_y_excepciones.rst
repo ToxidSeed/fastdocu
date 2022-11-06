@@ -1,0 +1,6 @@
+Errores y Excepciones
+=========================
+
+**Lista de excepciones**:
+
+https://docs.python.org/3/library/exceptions.html

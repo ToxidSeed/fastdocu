@@ -11,6 +11,16 @@ Welcome to sqlalchemy-fast's documentation!
    :caption: Contents:
 
    data_types
+   coalesce
+   comunes
+   distinct
+   extract
+   group_by
+   join
+   limit
+   order_by
+   outerjoin   
+   having
 
 
 Indices and tables

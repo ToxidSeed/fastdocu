@@ -17,7 +17,13 @@ Welcome to python-fast's documentation!
    pyenv
    string
    venv
-
+   errores_y_excepciones
+   ejecutar_externo
+   path
+   nomenclatura
+   logs
+   listas
+   rich/index
 
 Indices and tables
 ==================

@@ -26,7 +26,7 @@ Inicializar el servicio
 
 .. code-block:: bash
 
-    $ sudo mysqld -u root
+    $ sudo systemctl start mariadb.service
 
 Conexión de Prueba
 
@@ -77,7 +77,6 @@ Enable Service
 
     $ sudo systemctl enable mariadb.service
 
-.. code-block:: bash
 
-    $ sudo systemctl start mariadb.service
+    
 

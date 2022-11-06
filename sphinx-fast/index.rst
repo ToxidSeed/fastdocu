@@ -13,6 +13,9 @@ Welcome to sphinx-fast's documentation!
    quickstart
    frequent
    lexers
+   links
+   table
+   images
 
 
 

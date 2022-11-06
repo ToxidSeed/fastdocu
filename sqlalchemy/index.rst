@@ -10,7 +10,17 @@ Welcome to sqlalchemy-fast's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   data_types   
+   data_types
+   coalesce
+   comunes
+   distinct
+   extract
+   group_by
+   join
+   limit
+   order_by
+   outerjoin   
+   having
 
 
 Indices and tables

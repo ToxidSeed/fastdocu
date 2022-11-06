@@ -5,7 +5,7 @@ Crear entorno virtual
 
 .. code-block:: shell-session
 
-    $ python -m venv /path/to/venv
+    $ python -m venv /ruta/venv
 
 Activar entorno virtual
 

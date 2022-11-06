@@ -129,8 +129,15 @@ dmypy.json
 .pyre/
 
 #outputs
-python/output
+python/_build/
 mysql/_build/
+sqlalchemy/_build/
+sphinx-fast/_build/
+linux/_build/
+git/_build/
+nodejs/_build
+spark/_build
+shell/_build
 
 # code files
 .vscode/
