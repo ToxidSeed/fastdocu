@@ -15,6 +15,8 @@ Matar un proceso
 Puertos usados por procesos
 ------------------------------
 
+Requiere del paquete *lsof*
+
 .. code-block:: bash
 
     $ lsof -i -P -n | grep LISTEN

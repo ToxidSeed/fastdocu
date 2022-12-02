@@ -9,8 +9,8 @@ Welcome to nodejs's documentation!
 .. toctree::
    :maxdepth: 2
    
-   installation
-
+   install
+   npm
 
 
 Indices and tables

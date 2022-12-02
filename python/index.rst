@@ -24,6 +24,8 @@ Welcome to python-fast's documentation!
    logs
    listas
    rich/index
+   scrapy
+   click/index
 
 Indices and tables
 ==================

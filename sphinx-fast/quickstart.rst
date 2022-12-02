@@ -28,7 +28,7 @@ Build
 
 .. code-block:: bash
     
-    $ sphinx-build -b html ./ output
+    $ sphinx-build -b html ./ _build
 
 Notas
 --------------------
